@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>CRUD System</title>
+    </head>
+    <body>
+        <div class="container my-5">
+            <form onsubmit="getData()" class="shadow card w-50 p-4 m-auto ">
+                <h2 class="header">Product System</h2>
+                <label for="Product name">Product name:-</label>
+                <input onkeyup="validationName(this.value)" class="form-control  my-3" type="text" id="name">
+                <div id="alert_id" class="alert alert-danger text-center my-2">
+                    Name Must Start With Upper Case Letter!!!
+                </div>
+                <label for="Product Category">Product Category:-</label>
+                <input class="form-control  my-3" type="text" id="cate" required>
+                <label for="Product Price">Product Price:-</label>
+                <input onkeyup="validationPrice(this.value)" class="form-control my-3" type="number" id="price">
+                <div id="alert_id1" class="alert alert-danger text-center my-2">
+                    Please Enter a Correct Price!!!
+                </div>
+                <label for="Product Description">Product Description:-</label>
+                <textarea class="form-control  my-3 h-40" type="text" id="desc"></textarea>
+                <button type="submit" class="btn btn-info w-50 m-auto">Add Item</button>
+            </form>
+            <div class="container my-5">
+                <div class="w-25 m-auto">
+                    <input id="searchinput" onkeyup="search(this.value)" class="form-control" type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div id="update_new_id" class="new mb-3" class="container my-5">
+                <div class="w-25 m-auto">
+                    <input id="newData" class="form-control" type="text" placeholder="Write Your newWord">
+                </div>
+            </div>
+        <table class="table m-auto">
+                 <thead>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                 </thead>
+                 <tbody id="demo">
+                 </tbody>
+        </table>
+        </div>
+        <script src="js/jquery-slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

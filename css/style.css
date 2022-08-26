@@ -1,0 +1,32 @@
+body{
+    background-color: #20292d;
+}
+.card{
+    box-shadow: 21px -12px 30px 1px rgb(88, 93, 125);
+    background-color: #1b2225;
+}
+span{
+    background-color: yellow;
+}
+.header{
+   font-weight: bolder;
+   font-style: italic;
+   font-size: 26px;
+   padding:20px 0 ;
+   text-align: center;
+   color: #68dced;
+}
+label{
+    font-size: 17px;
+    color: white;
+}
+.table{
+    border-width: 8px;
+    color: #17a2b8;
+}
+.alert{
+    display: none;
+}
+.new{
+    display: none;
+}
